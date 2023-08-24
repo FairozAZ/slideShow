@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Slideshow Gallery</title>
+</head>
+<body>
+
+    <h1>SlideShow Gallery Using HTML CSS & JS</h1>
+
+    <div class="container">
+
+        <div class="mySlides">
+            <span class="numbertext">1 / 5</span>
+            <img src="./jungle.jpg">
+        </div>
+
+        <div class="mySlides">
+            <span class="numbertext">2 / 5</span>
+            <img src="./lake.jpg">
+        </div>
+
+        <div class="mySlides">
+            <span class="numbertext">3 / 5</span>
+            <img src="./spring.jpg">
+        </div>
+            
+        <div class="mySlides">
+            <span class="numbertext">4 / 5</span>
+            <img src="./mountain.jpg">
+        </div>
+
+        <div class="mySlides">
+            <span class="numbertext">5 / 5</span>
+            <img src="./sea.jpg">
+        </div>
+            
+        <span class="prev" onclick="plusSlides(-1)">❮</span>
+        <span class="next" onclick="plusSlides(1)">❯</span>
+
+        <div class="caption-container"><span id="caption"></span></div>
+
+        <div class="gallery">
+            <img class="demo" src="./jungle.jpg" onclick="currentSlide(1)" alt="jungle">       
+            <img class="demo" src="./lake.jpg" onclick="currentSlide(2)" alt="lake">
+            <img class="demo" src="./spring.jpg" onclick="currentSlide(3)" alt="spring">
+            <img class="demo" src="./mountain.jpg" onclick="currentSlide(4)" alt="mountain">
+            <img class="demo" src="./sea.jpg" onclick="currentSlide(5)" alt="sea">   
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
